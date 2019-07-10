@@ -1,6 +1,22 @@
+window.onload = function() {
+
 $submit = document.getElementById("submit");
 $answer = document.getElementById("answer");
+$theme = document.getElementById("theme");
 
+
+$theme.onclick = function() {
+    $body = $("body");
+    $a = $("a"); 
+    console.log("clicktheme");
+    if($body.attr("id") == "light") {
+        $body.attr("id","dark"); 
+        $a.attr("id", "dark");
+    } else {
+        $body.attr("id","light"); 
+        $a.attr("id", "light");
+    }
+}
 //gets the answer for the calculation and puts it on the page.
 $submit.onclick = function() {
     var firstNumber = document.getElementById("firstNumber").value;
@@ -32,5 +48,6 @@ $submit.onclick = function() {
     console.log("clicked");
     $answer.innerHTML= `${firstNumber} ${opValue} ${secondNumber} = ${answer}`;
    
+}
 }
 
