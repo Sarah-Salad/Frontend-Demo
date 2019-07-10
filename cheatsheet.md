@@ -20,7 +20,7 @@
     </p>
     <div class="exampleClass">
     <!-- this is a div and can be used as a general container -->
-    <img> 
+    <img>
     </div>
   </body>
 </html>
@@ -31,7 +31,7 @@
 ```css
 /* This is a comment in css */
 
-/* The following CSS changes everything in the body of the html document 
+/* The following CSS changes everything in the body of the html document
   (in this case, the background color) end properties with a semicolon */
 body {
   background-color: #edf1f7;
@@ -45,7 +45,7 @@ This changes the text color of items with id pID */
 
 /* The . before a word references something's class */
 .exampleClass {
-   
+
 }
 
 /* You can also change multiple things at the same time */
@@ -53,3 +53,6 @@ p, div {
 
 }
 ```
+.markdown-preview.markdown-preview {
+  background-color: #444;
+}
