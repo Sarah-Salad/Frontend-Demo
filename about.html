@@ -15,5 +15,22 @@
     <!--<img src = "images/calculator image 2.png" alt = "picture of calculator" id = "calcImage"> --> 
     <img src = "images/calculator gif.gif" alt = "calculator gif" id = "calcGif">
     <script src = "index.js" > </script>
+    <script>
+      $theme = document.getElementById("theme");
+
+
+$theme.onclick = function() {
+    $body = $("body");
+    $a = $("a"); 
+    console.log("clicktheme");
+    if($body.attr("id") == "light") {
+        $body.attr("id","dark"); 
+        $a.attr("id", "dark");
+    } else {
+        $body.attr("id","light"); 
+        $a.attr("id", "light");
+    }
+}
+    </script>
   </body>
 </html>
